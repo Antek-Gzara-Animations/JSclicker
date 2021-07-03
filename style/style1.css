@@ -1,0 +1,9 @@
+.NotBoughtPowerUp{
+    color: red;
+}
+.AvailablePowerUp{
+    color: blue;
+}
+.BoughtPowerUp{
+    color: green;
+}

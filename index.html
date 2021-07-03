@@ -2,10 +2,13 @@
     <head>
         <title>Clicker Game</title>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="style/style1.css" />
     </head>
     <body>
         <p id="scoreDisplay">0</p>
         <button onclick="Clicked();">click me</button>
+
+        <button id="PowerUp1" class="NotBoughtPowerUp">power up 10$</button>
         
         <script>
             let score = 0;
@@ -13,6 +16,10 @@
             function Clicked(){
                 score ++;
                 document.getElementById("scoreDisplay").innerHTML = score;
+
+                if(score >= 10){
+                    document.getElementById("PowerUp1").className = "AvailablePowerUp";
+                }
             }
         </script>
     </body>
