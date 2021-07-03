@@ -22,9 +22,10 @@
             function Clicked(){
                 score ++;
                 //document.getElementById("scoreDisplay").innerHTML = score; 
-
-                if(score >= 10){
-                    document.getElementById("PowerUp1").className = "AvailablePowerUp";
+                if(IsPowerUp1Buyed == false){
+                    if(score >= 10){
+                        document.getElementById("PowerUp1").className = "AvailablePowerUp";
+                    }
                 }
             }
 
@@ -42,6 +43,7 @@
             }
 
             function UpdateScoreDisplay(){
+                
                 document.getElementById("scoreDisplay").innerHTML = score;
             }
         </script>
