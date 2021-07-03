@@ -7,14 +7,19 @@
     <body>
         <p id="scoreDisplay">0</p>
         <button onclick="Clicked();">click me</button>
-
-        <button id="PowerUp1" class="NotBoughtPowerUp" onclick="BuyPowerUp1();">power up 10$</button>
+<br>
+        <button id="PowerUp1" class="NotBoughtPowerUp" onclick="BuyPowerUp1();">power up lvl.1 10$</button>
+        <button id="PowerUp2" class="NotBoughtPowerUp" onclick="BuyPowerUp2();">power up lvl.2 50$</button>
+        <button id="PowerUp3" class="NotBoughtPowerUp" onclick="BuyPowerUp3();">power up lvl.3 100$</button>
+        <button id="PowerUp4" class="NotBoughtPowerUp" onclick="BuyPowerUp4();">power up lvl.4 300$</button>
         
         <script>
             setInterval(UpdateScoreDisplay,1);
 
             let IsPowerUp1Buyed = false;
             let IsPowerUp2Buyed = false;
+            let IsPowerUp3Buyed = false;
+            let IsPowerUp4Buyed = false;
 
 
             let score = 0;
@@ -28,7 +33,7 @@
                     }
                 }
             }
-
+        //#region powerups
             function BuyPowerUp1(){
                 if(IsPowerUp1Buyed == false){
                     IsPowerUp1Buyed = true;
@@ -37,13 +42,48 @@
                     setInterval(PowerUp1Tick,1000);               
                 }
             }
+            function BuyPowerUp2(){
+                if(IsPowerUp2Buyed == false){
+                    IsPowerUp2Buyed = true;
+                    score -= 10;
+                    document.getElementById("PowerUp2").className = "BoughtPowerUp";
+                    setInterval(PowerUp2Tick,700);               
+                }
+            }
+            function BuyPowerUp3(){
+                if(IsPowerUp3Buyed == false){
+                    IsPowerUp3Buyed = true;
+                    score -= 10;
+                    document.getElementById("PowerUp3").className = "BoughtPowerUp";
+                    setInterval(PowerUp3Tick,800);               
+                }
+            }
+            function BuyPowerUp4(){
+                if(IsPowerUp4Buyed == false){
+                    IsPowerUp4Buyed = true;
+                    score -= 10;
+                    document.getElementById("PowerUp4").className = "BoughtPowerUp";
+                    setInterval(PowerUp4Tick,500);               
+                }
+            }
+        //#endregion
 
+        //#region powerups ticks
             function PowerUp1Tick(){
                 score ++;
             }
+            function PowerUp2Tick(){
+                score += 3;
+            }
+            function PowerUp3Tick(){
+                score += 5;
+            }
+            function PowerUp3Tick(){
+                score += 5;
+            }
+        //#endregion
 
-            function UpdateScoreDisplay(){
-                
+            function UpdateScoreDisplay(){ 
                 document.getElementById("scoreDisplay").innerHTML = score;
             }
         </script>
