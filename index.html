@@ -27,26 +27,6 @@
             function Clicked(){
                 score ++;
                 //document.getElementById("scoreDisplay").innerHTML = score; 
-                if(IsPowerUp1Buyed == false){
-                    if(score >= 10){
-                        document.getElementById("PowerUp1").className = "AvailablePowerUp";
-                    }
-                }
-                if(IsPowerUp2Buyed == false){
-                    if(score >= 50){
-                        document.getElementById("PowerUp2").className = "AvailablePowerUp";
-                    }
-                }
-                if(IsPowerUp3Buyed == false){
-                    if(score >= 100){
-                        document.getElementById("PowerUp3").className = "AvailablePowerUp";
-                    }
-                }
-                if(IsPowerUp4Buyed == false){
-                    if(score >= 300){
-                        document.getElementById("PowerUp4").className = "AvailablePowerUp";
-                    }
-                }
             }
 
         //#region powerups
@@ -101,6 +81,27 @@
 
             function UpdateScoreDisplay(){ 
                 document.getElementById("scoreDisplay").innerHTML = score;
+
+                if(IsPowerUp1Buyed == false){
+                    if(score >= 10){
+                        document.getElementById("PowerUp1").className = "AvailablePowerUp";
+                    }
+                }
+                if(IsPowerUp2Buyed == false){
+                    if(score >= 50){
+                        document.getElementById("PowerUp2").className = "AvailablePowerUp";
+                    }
+                }
+                if(IsPowerUp3Buyed == false){
+                    if(score >= 100){
+                        document.getElementById("PowerUp3").className = "AvailablePowerUp";
+                    }
+                }
+                if(IsPowerUp4Buyed == false){
+                    if(score >= 300){
+                        document.getElementById("PowerUp4").className = "AvailablePowerUp";
+                    }
+                }
             }
         </script>
     </body>
