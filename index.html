@@ -33,9 +33,10 @@
                     }
                 }
             }
+
         //#region powerups
             function BuyPowerUp1(){
-                if(IsPowerUp1Buyed == false){
+                if(IsPowerUp1Buyed == false && score < 10){
                     IsPowerUp1Buyed = true;
                     score -= 10;
                     document.getElementById("PowerUp1").className = "BoughtPowerUp";
@@ -43,7 +44,7 @@
                 }
             }
             function BuyPowerUp2(){
-                if(IsPowerUp2Buyed == false){
+                if(IsPowerUp2Buyed == false && score > 50){
                     IsPowerUp2Buyed = true;
                     score -= 10;
                     document.getElementById("PowerUp2").className = "BoughtPowerUp";
@@ -51,7 +52,7 @@
                 }
             }
             function BuyPowerUp3(){
-                if(IsPowerUp3Buyed == false){
+                if(IsPowerUp3Buyed == false && score > 100){
                     IsPowerUp3Buyed = true;
                     score -= 10;
                     document.getElementById("PowerUp3").className = "BoughtPowerUp";
@@ -59,7 +60,7 @@
                 }
             }
             function BuyPowerUp4(){
-                if(IsPowerUp4Buyed == false){
+                if(IsPowerUp4Buyed == false && score > 300){
                     IsPowerUp4Buyed = true;
                     score -= 10;
                     document.getElementById("PowerUp4").className = "BoughtPowerUp";
