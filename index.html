@@ -11,6 +11,10 @@
         <button id="PowerUp1" class="NotBoughtPowerUp">power up 10$</button>
         
         <script>
+            let IsPowerUp1Buyed = false;
+            let IsPowerUp2Buyed = false;
+
+
             let score = 0;
 
             function Clicked(){
@@ -20,6 +24,19 @@
                 if(score >= 10){
                     document.getElementById("PowerUp1").className = "AvailablePowerUp";
                 }
+            }
+
+            function BuyPowerUp(){
+                if(IsPowerUp1Buyed == false){
+                    IsPowerUp1Buyed = true;
+                    score -= 10;
+                    document.getElementById("PowerUp1").className = "BoughtPowerUp";
+                    setInterval(PowerUp1Tick,1000);               
+                }
+            }
+
+            function PowerUp1Tick(){
+                score ++;
             }
         </script>
     </body>
