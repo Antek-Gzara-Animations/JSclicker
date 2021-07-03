@@ -8,7 +8,7 @@
         <p id="scoreDisplay">0</p>
         <button onclick="Clicked();">click me</button>
 
-        <button id="PowerUp1" class="NotBoughtPowerUp">power up 10$</button>
+        <button id="PowerUp1" class="NotBoughtPowerUp" onclick="BuyPowerUp1();">power up 10$</button>
         
         <script>
             let IsPowerUp1Buyed = false;
@@ -26,7 +26,7 @@
                 }
             }
 
-            function BuyPowerUp(){
+            function BuyPowerUp1(){
                 if(IsPowerUp1Buyed == false){
                     IsPowerUp1Buyed = true;
                     score -= 10;
