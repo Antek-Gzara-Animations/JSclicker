@@ -61,7 +61,7 @@
             function BuyPowerUp2(){
                 if(IsPowerUp2Buyed == false && score >= 50){
                     IsPowerUp2Buyed = true;
-                    score -= 10;
+                    score -= 50;
                     document.getElementById("PowerUp2").className = "BoughtPowerUp";
                     setInterval(PowerUp2Tick,700);               
                 }
@@ -69,7 +69,7 @@
             function BuyPowerUp3(){
                 if(IsPowerUp3Buyed == false && score >= 100){
                     IsPowerUp3Buyed = true;
-                    score -= 10;
+                    score -= 100;
                     document.getElementById("PowerUp3").className = "BoughtPowerUp";
                     setInterval(PowerUp3Tick,800);               
                 }
@@ -77,7 +77,7 @@
             function BuyPowerUp4(){
                 if(IsPowerUp4Buyed == false && score >= 300){
                     IsPowerUp4Buyed = true;
-                    score -= 10;
+                    score -= 300;
                     document.getElementById("PowerUp4").className = "BoughtPowerUp";
                     setInterval(PowerUp4Tick,500);               
                 }
