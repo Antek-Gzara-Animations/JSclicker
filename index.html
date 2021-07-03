@@ -11,6 +11,8 @@
         <button id="PowerUp1" class="NotBoughtPowerUp" onclick="BuyPowerUp1();">power up 10$</button>
         
         <script>
+            setInterval(UpdateScoreDisplay,1);
+
             let IsPowerUp1Buyed = false;
             let IsPowerUp2Buyed = false;
 
@@ -19,7 +21,7 @@
 
             function Clicked(){
                 score ++;
-                document.getElementById("scoreDisplay").innerHTML = score;
+                //document.getElementById("scoreDisplay").innerHTML = score; 
 
                 if(score >= 10){
                     document.getElementById("PowerUp1").className = "AvailablePowerUp";
@@ -31,12 +33,16 @@
                     IsPowerUp1Buyed = true;
                     score -= 10;
                     document.getElementById("PowerUp1").className = "BoughtPowerUp";
-                    setInterval(PowerUp1Tick,1);               
+                    setInterval(PowerUp1Tick,1000);               
                 }
             }
 
             function PowerUp1Tick(){
                 score ++;
+            }
+
+            function UpdateScoreDisplay(){
+                document.getElementById("scoreDisplay").innerHTML = score;
             }
         </script>
     </body>
