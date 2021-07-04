@@ -7,7 +7,7 @@
 .BoughtPowerUp{
     color: green;
 }
-.NotBoughtPowerUp.BoughtPowerUp.AvailablePowerUp{
+.NotBoughtPowerUp{
     width: 50;
     height: 20;
     border: 1px white;
