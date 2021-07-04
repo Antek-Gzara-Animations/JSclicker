@@ -7,6 +7,9 @@ let IsPowerUp1Buyed = false;
 let IsPowerUp2Buyed = false;
 let IsPowerUp3Buyed = false;
 let IsPowerUp4Buyed = false;
+let IsPowerUp5Buyed = false;
+let IsPowerUp6Buyed = false;
+let IsPowerUp7Buyed = false;
 
 
 let score = 0;
@@ -48,7 +51,30 @@ function BuyPowerUp4(){
         document.getElementById("PowerUp4").className = "BoughtPowerUp";
         setInterval(PowerUp4Tick,500);               
     }
-}
+    function BuyPowerUp5(){
+        if(IsPowerUp5Buyed == false && score >= 700){
+            IsPowerUp5Buyed = true;
+            score -= 700;
+            document.getElementById("PowerUp5").className = "BoughtPowerUp";
+            setInterval(PowerUp5Tick,1000);               
+        }
+    }
+    function BuyPowerUp6(){
+        if(IsPowerUp6Buyed == false && score >= 1000){
+            IsPowerUp6Buyed = true;
+            score -= 1000;
+            document.getElementById("PowerUp6").className = "BoughtPowerUp";
+            setInterval(PowerUp6Tick,800);               
+        }
+    }
+    function BuyPowerUp7(){
+        if(IsPowerUp7Buyed == false && score >= 5000){
+            IsPowerUp7Buyed = true;
+            score -= 5000;
+            document.getElementById("PowerUp7").className = "BoughtPowerUp";
+            setInterval(PowerUp7Tick,700);               
+        }
+    }
 //#endregion
 
 //#region powerups ticks
@@ -61,10 +87,20 @@ function PowerUp2Tick(){
 function PowerUp3Tick(){
     score += 5;
 }
-function PowerUp3Tick(){
-    score += 5;
+function PowerUp4Tick(){
+    score += 6;
+}
+function PowerUp5Tick(){
+    score += 8;
+}
+function PowerUp6Tick(){
+    score += 9;
+}
+function PowerUp7Tick(){
+    score += 9;
 }
 //#endregion
+
 
 function UpdateScoreDisplay(){ 
     document.getElementById("scoreDisplay").innerHTML = score;
@@ -87,6 +123,21 @@ function UpdateScoreDisplay(){
     if(IsPowerUp4Buyed == false){
         if(score >= 300){
             document.getElementById("PowerUp4").className = "AvailablePowerUp";
+        }
+    }
+    if(IsPowerUp5Buyed == false){
+        if(score >= 700){
+            document.getElementById("PowerUp5").className = "AvailablePowerUp";
+        }
+    }
+    if(IsPowerUp8Buyed == false){
+        if(score >= 1000){
+            document.getElementById("PowerUp8").className = "AvailablePowerUp";
+        }
+    }
+    if(IsPowerUp8Buyed == false){
+        if(score >= 5000){
+            document.getElementById("PowerUp8").className = "AvailablePowerUp";
         }
     }
 }
