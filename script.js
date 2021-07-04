@@ -17,6 +17,12 @@ let score = 0;
 function Clicked(){
     score ++;
     //document.getElementById("scoreDisplay").innerHTML = score; 
+    document.getElementById("ClickButton").className = "ClickedButton";
+    
+}
+
+function ClickButtonNormal(){
+    document.getElementById("ClickButton").ClassName = "CLickButton";
 }
 
 //#region powerups
