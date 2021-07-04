@@ -6,8 +6,8 @@
     background-color: cornflowerblue;
 }
 .NotBoughtPowerUp:hover{
-    border: 5px cornflowerblue;
     background-color: white;
+    border: 5px cornflowerblue;
 }
 
 .AvailablePowerUp{
