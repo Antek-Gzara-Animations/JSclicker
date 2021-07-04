@@ -1,20 +1,32 @@
 .NotBoughtPowerUp{
     color: red;
+    width: 100;
+    height: 50;
+    border: 1px white;
+    background-color: cornflowerblue;
 }
+.NotBoughtPowerUp:hover{
+    border: 1px cornflowerblue;
+    background-color: white;
+}
+
 .AvailablePowerUp{
     color: blue;
+    width: 50;
+    height: 20;
+    border: 1px white;
+    background-color: cornflowerblue;
 }
 .BoughtPowerUp{
     color: green;
+    width: 50;
+    height: 20;
+    border: 1px white;
+    background-color: cornflowerblue;
 }
 .NotBoughtPowerUp .AvailablePowerUp .BoughtPowerUp{
     width: 50;
     height: 20;
     border: 1px white;
     background-color: cornflowerblue;
-}
-
-.ShopButton:hover{
-    border: 1px cornflowerblue;
-    background-color: white;
 }
