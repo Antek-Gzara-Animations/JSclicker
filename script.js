@@ -133,12 +133,12 @@ function UpdateScoreDisplay(){
     }
     if(IsPowerUp6Buyed == false){
         if(score >= 1000){
-            document.getElementById("PowerUp8").className = "AvailablePowerUp";
+            document.getElementById("PowerUp6").className = "AvailablePowerUp";
         }
     }
     if(IsPowerUp7Buyed == false){
         if(score >= 5000){
-            document.getElementById("PowerUp8").className = "AvailablePowerUp";
+            document.getElementById("PowerUp7").className = "AvailablePowerUp";
         }
     }
 }
