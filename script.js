@@ -65,7 +65,7 @@ function BuyPowerUp4(){
             IsPowerUp6Buyed = true;
             score -= 1000;
             document.getElementById("PowerUp6").className = "BoughtPowerUp";
-            setInterval(PowerUp6Tick,800);               
+            setInterval(PowerUp6Tick,500);               
         }
     }
     function BuyPowerUp7(){
@@ -73,7 +73,7 @@ function BuyPowerUp4(){
             IsPowerUp7Buyed = true;
             score -= 5000;
             document.getElementById("PowerUp7").className = "BoughtPowerUp";
-            setInterval(PowerUp7Tick,700);               
+            setInterval(PowerUp7Tick,400);               
         }
     }
 //#endregion
