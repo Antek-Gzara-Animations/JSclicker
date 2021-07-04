@@ -131,12 +131,12 @@ function UpdateScoreDisplay(){
             document.getElementById("PowerUp5").className = "AvailablePowerUp";
         }
     }
-    if(IsPowerUp8Buyed == false){
+    if(IsPowerUp6Buyed == false){
         if(score >= 1000){
             document.getElementById("PowerUp8").className = "AvailablePowerUp";
         }
     }
-    if(IsPowerUp8Buyed == false){
+    if(IsPowerUp7Buyed == false){
         if(score >= 5000){
             document.getElementById("PowerUp8").className = "AvailablePowerUp";
         }
