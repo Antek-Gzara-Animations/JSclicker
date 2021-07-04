@@ -7,3 +7,14 @@
 .BoughtPowerUp{
     color: green;
 }
+.ShopButton{
+    width: 50;
+    height: 20;
+    border: 1px white;
+    background-color: cornflowerblue;
+}
+
+.ShopButton:hover{
+    border: 1px cornflowerblue;
+    background-color: white;
+}
