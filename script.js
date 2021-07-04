@@ -51,6 +51,7 @@ function BuyPowerUp4(){
         document.getElementById("PowerUp4").className = "BoughtPowerUp";
         setInterval(PowerUp4Tick,500);               
     }
+}
     function BuyPowerUp5(){
         if(IsPowerUp5Buyed == false && score >= 700){
             IsPowerUp5Buyed = true;
