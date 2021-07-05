@@ -17,7 +17,7 @@ let score = 0;
 function Clicked(){
     score ++;
     //document.getElementById("scoreDisplay").innerHTML = score; 
-    document.getElementById("ClickButton").className = "ClickedButton";
+    
     
 }
 
