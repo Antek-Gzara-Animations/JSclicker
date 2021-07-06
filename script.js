@@ -13,16 +13,15 @@ let IsPowerUp7Buyed = false;
 
 
 let score = 0;
+let OldScore = 0;
 
 function Clicked(){
     score ++;
     //document.getElementById("scoreDisplay").innerHTML = score; 
-    
-    
 }
 
 function ClickButtonNormal(){
-    document.getElementById("ClickButton").ClassName = "CLickButton";
+    document.getElementById("ClickButton").className = "ClickButton";
 }
 
 //#region powerups
@@ -110,7 +109,7 @@ function PowerUp7Tick(){
 
 
 function UpdateScoreDisplay(){ 
-    document.getElementById("scoreDisplay").innerHTML = score;
+    document.getElementById("scoreDisplay").innerHTML = score + "$";
 
     if(IsPowerUp1Buyed == false){
         if(score >= 10){
@@ -146,5 +145,11 @@ function UpdateScoreDisplay(){
         if(score >= 5000){
             document.getElementById("PowerUp7").className = "AvailablePowerUp";
         }
+    }
+
+    if(OldScore != score){
+        OldScore = score;
+        document.getElementById("ClickButton").className = "ClickedButton";
+        setTimeout(ClickButtonNormal,200);
     }
 }

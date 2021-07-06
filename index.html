@@ -4,12 +4,14 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style1.css" />
         <script src="script.js"></script>
+        <link rel="preload" as="pick1" href="pick1.png">
+        <link rel="preload" as="pick2" href="pick2.png">
     </head>
     <body>
-        <p id="scoreDisplay">0</p>
-        <button id="ClickButton" class="ClickButton" onclick="Clicked();">click me</button>
+        <p class="Score" id="scoreDisplay">0$</p>
+        <button id="ClickButton" class="ClickButton" onclick="Clicked();"></button>
         <br>
-        <div>
+        <div class="shop">
             <button id="PowerUp1" class="NotBoughtPowerUp" onclick="BuyPowerUp1();">helper lvl.1 10$</button>
             <button id="PowerUp2" class="NotBoughtPowerUp" onclick="BuyPowerUp2();">helper lvl.2 50$</button>
             <button id="PowerUp3" class="NotBoughtPowerUp" onclick="BuyPowerUp3();">helper lvl.3 100$</button>
